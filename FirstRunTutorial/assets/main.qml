@@ -2,8 +2,10 @@ import bb.cascades 1.0
 
 Page {
     id: popUp
+    //Here we need an objectName so we can use Qsettings to store a bool property
     objectName: "popUp"
-    property bool firstRun: app.getValueFor(popUp.objectName, true)
+    //This is the bool property that will determine if the tutorial should pop up or not
+    property bool firstRun: _app.getValueFor(popUp.objectName, true)
 
     Container {
         layout: DockLayout {
@@ -42,8 +44,11 @@ Page {
                 horizontalAlignment: HorizontalAlignment.Center
                 text: "Reset"
                 onClicked: {
+                    //This will reset the bool value to default so the tutorial 
+                    //will launch next time the app is run
                     firstRun = true
-                    app.saveValueFor(popUp.objectName, popUp.firstRun)
+                    //What we do here is set the bool property to true then save it
+                    _app.saveValueFor(popUp.objectName, popUp.firstRun)
                 }
             }
         }
@@ -65,7 +70,7 @@ Page {
                             onTriggered: {
                                 tutorialSheet.close()
                                 popUp.firstRun = false
-                                app.saveValueFor(popUp.objectName, popUp.firstRun)
+                                _app.saveValueFor(popUp.objectName, popUp.firstRun)
                             }
                         }
                         title: "Tutorial"

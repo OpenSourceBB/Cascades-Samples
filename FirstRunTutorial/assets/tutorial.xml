@@ -1,0 +1,12 @@
+<model>
+  
+    <item title="Hint 1: " info="I am a helpful hint!" chrono="1 of 4"/>
+ 
+    <item title="Hint 2: " info="No way! Me too!" chrono="2 of 4"/>
+  
+    <item title="Hint 3: " info="Some hints say I am helpful...some don't" chrono="3 of 4"/>
+ 
+    <item title="Hint 4: " info="I think we are all helpful" chrono="4 of 4"/>
+
+
+</model>

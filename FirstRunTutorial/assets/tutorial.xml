@@ -1,12 +1,12 @@
 <model>
   
-    <item title="Hint 1: " info="I am a helpful hint!" chrono="1 of 4"/>
+    <item title="Welcome! " info="This is a tutorial that can run just once when the app is launched for the first time." chrono="1 of 4"/>
  
-    <item title="Hint 2: " info="No way! Me too!" chrono="2 of 4"/>
+    <item title="Close Button: " info="The 'Close' button at the top right of the screen will simply close this tutorial, but the tutorial will launch again once the app is closed and reopened" chrono="2 of 4"/>
   
-    <item title="Hint 3: " info="Some hints say I am helpful...some don't" chrono="3 of 4"/>
+    <item title="Dismiss Button: " info="The 'Dismiss' button on the top left of the screen will close this tutorial forever or until the app is uninstalled, reinstalled, and relaunched." chrono="3 of 4"/>
  
-    <item title="Hint 4: " info="I think we are all helpful" chrono="4 of 4"/>
+    <item title="Resetting: " info="When this tutorial is closed, you can use the 'Reset' button on the homescreen to reset the turorial and make it show again when the app is launched." chrono="4 of 4"/>
 
 
 </model>

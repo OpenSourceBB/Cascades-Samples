@@ -1,5 +1,5 @@
 import bb.cascades 1.0
-
+//This is the ListItemComponent created for the list view on a Q10/Q5.
 Container {
     id: testing
     layout: DockLayout {
@@ -16,6 +16,7 @@ Container {
         rightPadding: 20.0
         bottomPadding: 20.0
         Label {
+            //this is where  pull the data from the XML file and tell it which data to use for the label
             text: ListItemData.title + ListItemData.info
             textStyle.fontSize: FontSize.PointValue
             textStyle.fontWeight: FontWeight.W100
@@ -30,6 +31,7 @@ Container {
         horizontalAlignment: HorizontalAlignment.Center
         bottomPadding: 25.0
         Label {
+            //this is a page number also pulled from the XML
             text: ListItemData.chrono
         }
     }
